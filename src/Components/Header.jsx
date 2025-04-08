@@ -8,78 +8,116 @@ export default function Header() {
   }
 
   return (
-    <header class="header">
-      <div class="header__content">
-        <div class="header__logo-container">
-          <div class="header__logo-img-cont">
+    <header className="fixed z-10 w-full bg-white shadow-md">
+      <div className="not-md:px-8 flex items-center justify-between px-20 py-4">
+        <div className="hover:text-n-blue flex cursor-pointer items-center text-[#333] transition-all duration-300">
+          <div className="bg-n-blue not-md:mr-5 not-md:h-16 not-md:w-16 mr-6 h-20 w-20 overflow-hidden rounded-full">
             <img
               src="img/avatar.webp"
               alt="Claudio Marino Logo Image"
-              class="header__logo-img"
+              className="block h-full w-full object-cover object-center"
             />
           </div>
-          <span class="header__logo-sub">Claudio Marino</span>
+          <span className="text-3xl font-bold uppercase tracking-widest">
+            Claudio Marino
+          </span>
         </div>
-        <div class="header__main">
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="#" class="header__link">
+        <div>
+          <ul className="not-sm:hidden flex">
+            <li>
+              <a
+                href="#"
+                className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
+              >
                 {" "}
                 Home{" "}
               </a>
             </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="header__link">
+            <li>
+              <a
+                href="./index.html#projects"
+                className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
+              >
                 Projects
               </a>
             </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#about" class="header__link">
+            <li>
+              <a
+                href="./index.html#about"
+                className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
+              >
                 About{" "}
               </a>
             </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="header__link">
+            <li>
+              <a
+                href="./index.html#contact"
+                className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
+              >
                 {" "}
                 Contact{" "}
               </a>
             </li>
           </ul>
-          <div className="header__main-ham-menu-cont">
+          <div className="not-sm:block hidden w-12 py-9">
             <img
               src="/svg/ham-menu.svg"
               alt="hamburger menu"
-              className={`header__main-ham-menu ${isOpen ? "d-none" : ""}`}
+              className={`w-full ${isOpen ? "hidden" : ""}`}
               onClick={toggleOpen}
             />
             <img
               src="/svg/ham-menu-close.svg"
               alt="hamburger menu close"
-              className={`header__main-ham-menu-close ${!isOpen ? "d-none" : ""}`}
+              className={`w-full ${!isOpen ? "hidden" : ""}`}
               onClick={toggleOpen}
             />
           </div>
         </div>
       </div>
       <div
-        className={`header__sm-menu ${isOpen ? "header__sm-menu--active" : ""}`}
+        className={`invisible absolute top-full w-full bg-white opacity-0 shadow-md transition-all duration-300 ${isOpen ? "not-sm:visible not-sm:opacity-100 invisible opacity-0" : ""}`}
       >
-        <div className="header__sm-menu-content">
-          <ul className="header__sm-menu-links">
-            <li className="header__sm-menu-link">
-              <a href="./index.html"> Home </a>
+        <div>
+          <ul>
+            <li>
+              <a
+                className="hover:text-n-blue block border-b border-t border-[#eee] px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
+                href="./index.html"
+              >
+                {" "}
+                Home{" "}
+              </a>
             </li>
 
-            <li className="header__sm-menu-link">
-              <a href="./index.html#projects"> Projects </a>
+            <li>
+              <a
+                className="hover:text-n-blue block border-b border-[#eee] px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
+                href="./index.html#projects"
+              >
+                {" "}
+                Projects{" "}
+              </a>
             </li>
 
-            <li className="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
+            <li>
+              <a
+                className="hover:text-n-blue block border-b border-[#eee] px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
+                href="./index.html#about"
+              >
+                {" "}
+                About{" "}
+              </a>
             </li>
 
-            <li className="header__sm-menu-link">
-              <a href="./index.html#contact"> Contact </a>
+            <li>
+              <a
+                className="hover:text-n-blue block px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
+                href="./index.html#contact"
+              >
+                {" "}
+                Contact{" "}
+              </a>
             </li>
           </ul>
         </div>
