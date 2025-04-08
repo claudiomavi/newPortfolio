@@ -1,7 +1,5 @@
 Fase 2 – Migración de plantilla a React
 
-Reemplazar los textos y datos de ejemplo con tu información real (nombre, bio, skills, etc.)
-
 Usar clases de Tailwind en lugar de estilos antiguos (si tu plantilla no los usa)
 
 Fase 3 – Añadir React Router
