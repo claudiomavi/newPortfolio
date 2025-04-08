@@ -6,10 +6,12 @@ export default function About() {
           <span class="heading-sec__main">About Me</span>
           <span class="heading-sec__sub">
             <p>
-              I'm a frontend developer based out of London, UK. I love building
-              apps that solve real-world problems, and that are delightful to
-              use. My specialities include TypeScript, React JS, Tailwind CSS,
-              and Styled Components.
+              I'm a Front-End Developer with expertise in React and JavaScript,
+              focused on creating efficient and user-friendly web applications.
+              I combine modern CSS techniques with responsive design principles
+              to deliver seamless user experiences. Currently expanding my
+              skills in web development while maintaining a strong foundation in
+              best practices and clean code architecture.
             </p>
           </span>
         </h2>
@@ -18,9 +20,11 @@ export default function About() {
             <h3 class="about__content-title">Get to know me!</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
-                My background is in teaching and marketing. I have a bachelors
-                degree in English from Kings College. When I'm not coding, I
-                take care of my five adorable cats.
+                My background is in business administration and web development.
+                I’ve worked in administration for a Spanish company while
+                building personal projects using React and modern web
+                technologies. When I’m not coding, I enjoy fantasy series like
+                Game of Thrones.
               </p>
             </div>
             <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">
@@ -34,11 +38,11 @@ export default function About() {
               <div class="skills__skill">CSS</div>
               <div class="skills__skill">JavaScript</div>
               <div class="skills__skill">React</div>
-              <div class="skills__skill">TypeScript</div>
+              <div class="skills__skill">Firebase</div>
               <div class="skills__skill">Git</div>
               <div class="skills__skill">Figma</div>
               <div class="skills__skill">Tailwind CSS</div>
-              <div class="skills__skill">Jasmine</div>
+              <div class="skills__skill">API Rest</div>
             </div>
           </div>
         </div>

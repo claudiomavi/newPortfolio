@@ -1,21 +1,29 @@
+import { useState } from "react";
+
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleOpen() {
+    setIsOpen((prev) => !prev);
+  }
+
   return (
     <header class="header">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/img/avatar.jpg"
-              alt="Ram Maheshwari Logo Image"
+              src="img/avatar.webp"
+              alt="Claudio Marino Logo Image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">Jane Smith</span>
+          <span class="header__logo-sub">Claudio Marino</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link">
+              <a href="#" class="header__link">
                 {" "}
                 Home{" "}
               </a>
@@ -37,36 +45,40 @@ export default function Header() {
               </a>
             </li>
           </ul>
-          <div class="header__main-ham-menu-cont">
+          <div className="header__main-ham-menu-cont">
             <img
-              src="./assets/svg/ham-menu.svg"
+              src="/svg/ham-menu.svg"
               alt="hamburger menu"
-              class="header__main-ham-menu"
+              className={`header__main-ham-menu ${isOpen ? "d-none" : ""}`}
+              onClick={toggleOpen}
             />
             <img
-              src="./assets/svg/ham-menu-close.svg"
+              src="/svg/ham-menu-close.svg"
               alt="hamburger menu close"
-              class="header__main-ham-menu-close d-none"
+              className={`header__main-ham-menu-close ${!isOpen ? "d-none" : ""}`}
+              onClick={toggleOpen}
             />
           </div>
         </div>
       </div>
-      <div class="header__sm-menu">
-        <div class="header__sm-menu-content">
-          <ul class="header__sm-menu-links">
-            <li class="header__sm-menu-link">
+      <div
+        className={`header__sm-menu ${isOpen ? "header__sm-menu--active" : ""}`}
+      >
+        <div className="header__sm-menu-content">
+          <ul className="header__sm-menu-links">
+            <li className="header__sm-menu-link">
               <a href="./index.html"> Home </a>
             </li>
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#about"> About </a>
-            </li>
-
-            <li class="header__sm-menu-link">
+            <li className="header__sm-menu-link">
               <a href="./index.html#projects"> Projects </a>
             </li>
 
-            <li class="header__sm-menu-link">
+            <li className="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li className="header__sm-menu-link">
               <a href="./index.html#contact"> Contact </a>
             </li>
           </ul>

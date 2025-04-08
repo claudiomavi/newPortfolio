@@ -1,3 +1,5 @@
+// to-do: change with a json of your Projects, show only 3 random and add a button to go into another page with all the projects
+
 export default function Projects() {
   return (
     <section id="projects" class="projects sec-pad">

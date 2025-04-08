@@ -1,4 +1,6 @@
 export default function Footer() {
+  // to-do: put the socials in row for big screens
+
   return (
     <footer class="main-footer">
       <div class="main-container">
@@ -8,60 +10,59 @@ export default function Footer() {
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/claudio-marino-b3420b296/"
+              >
                 <img
                   class="main-footer__icon"
-                  src="./assets/img/linkedin-ico.png"
+                  src="/img/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/claudiomavi"
+              >
                 <img
                   class="main-footer__icon"
-                  src="./assets/img/github-ico.png"
+                  src="/img/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/img/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/img/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:claudio.marino@outlook.es"
+              >
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/img/insta-ico.png"
+                  src="/svg/mail.svg"
+                  alt="icon"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/marinodeveloper"
+              >
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="/img/insta-ico.png"
                   alt="icon"
                 />
               </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">Jane Smith</h4>
+            <h4 class="heading heading-sm text-lt">Claudio Marino</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              Front-End Developer | React & JavaScript
             </p>
           </div>
         </div>
-
-        {/* <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :)
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
-         --> */}
       </div>
     </footer>
   );
