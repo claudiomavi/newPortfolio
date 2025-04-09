@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact not-md:py-32 dynamicBg py-48">
       <div className="mx-auto w-[92%] max-w-[120rem]">
-        <h2 className="heading-sec__mb-med">
+        <h2 className="not-md:mb-32 mb-36">
           <span className="relative mb-14 block text-center text-6xl uppercase tracking-widest text-white">
             Contact
           </span>

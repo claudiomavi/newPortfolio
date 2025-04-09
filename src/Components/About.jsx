@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <section id="about" className="about not-md:py-32 py-48">
+    <section id="about" className="not-md:py-32 bg-[#fafafa] py-48">
       <div className="mx-auto w-[92%] max-w-[120rem]">
-        <h2 className="heading-sec__mb-med">
+        <h2 className="not-md:mb-32 mb-36">
           <span className="relative mb-14 block text-center text-6xl uppercase tracking-widest">
             About Me
           </span>
@@ -17,11 +17,13 @@ export default function About() {
             </p>
           </span>
         </h2>
-        <div className="about__content">
-          <div className="about__content-main">
-            <h3 className="about__content-title">Get to know me!</h3>
-            <div className="about__content-details">
-              <p className="about__content-details-para">
+        <div className="not-md:gap-32 grid grid-cols-1 gap-40">
+          <div>
+            <h3 className="not-sm:text-4xl mb-12 text-5xl font-bold">
+              Get to know me!
+            </h3>
+            <div>
+              <p className="leading-12 mb-16 max-w-5xl text-3xl text-gray-500">
                 My background is in business administration and web development.
                 I’ve worked in administration for a Spanish company while
                 building personal projects using React and modern web
@@ -36,18 +38,38 @@ export default function About() {
               Contact
             </a>
           </div>
-          <div className="about__content-skills">
-            <h3 className="about__content-title">My Skills</h3>
-            <div className="skills">
-              <div className="skills__skill">HTML</div>
-              <div className="skills__skill">CSS</div>
-              <div className="skills__skill">JavaScript</div>
-              <div className="skills__skill">React</div>
-              <div className="skills__skill">Firebase</div>
-              <div className="skills__skill">Git</div>
-              <div className="skills__skill">Figma</div>
-              <div className="skills__skill">Tailwind CSS</div>
-              <div className="skills__skill">API Rest</div>
+          <div>
+            <h3 className="not-sm:text-4xl mb-12 text-5xl font-bold">
+              My Skills
+            </h3>
+            <div className="flex flex-wrap">
+              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
+                HTML
+              </div>
+              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
+                CSS
+              </div>
+              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
+                JavaScript
+              </div>
+              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
+                React
+              </div>
+              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
+                Firebase
+              </div>
+              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
+                Git
+              </div>
+              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
+                Figma
+              </div>
+              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
+                Tailwind CSS
+              </div>
+              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
+                API Rest
+              </div>
             </div>
           </div>
         </div>
