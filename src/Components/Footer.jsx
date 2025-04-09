@@ -1,6 +1,4 @@
 export default function Footer() {
-  // to-do: put the socials in row for big screens
-
   return (
     <footer className="bg-black text-white">
       <div className="mx-auto w-[92%] max-w-[120rem]">
@@ -9,46 +7,34 @@ export default function Footer() {
             <h2 className="text-4xl uppercase tracking-widest">
               <span>Social</span>
             </h2>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col justify-center gap-4 md:flex-row md:items-center">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/claudio-marino-b3420b296/"
               >
-                <img
-                  className="mr-4 w-10"
-                  src="/img/linkedin-ico.webp"
-                  alt="icon"
-                />
+                <img className="w-10" src="/img/linkedin-ico.webp" alt="icon" />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/claudiomavi"
               >
-                <img
-                  className="mr-4 w-10"
-                  src="/img/github-ico.webp"
-                  alt="icon"
-                />
+                <img className="w-10" src="/img/github-ico.webp" alt="icon" />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="mailto:claudio.marino@outlook.es"
               >
-                <img className="mr-4 w-10" src="/svg/mail.svg" alt="icon" />
+                <img className="w-10" src="/svg/mail.svg" alt="icon" />
               </a>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.instagram.com/marinodeveloper"
               >
-                <img
-                  className="mr-4 w-10"
-                  src="/img/insta-ico.webp"
-                  alt="icon"
-                />
+                <img className="w-10" src="/img/insta-ico.webp" alt="icon" />
               </a>
             </div>
           </div>
