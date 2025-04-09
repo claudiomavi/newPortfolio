@@ -3,6 +3,8 @@
 // to-do: the function of random numbers have to run only the first time (use an useEffect)
 // to-do: create a Project component that can be rehused in this component and into the page with all the projects
 
+import { Link } from "react-router-dom";
+
 export default function Projects() {
   return (
     <section id="projects" className="not-md:py-32 py-48">
@@ -42,9 +44,12 @@ export default function Projects() {
               >
                 Learn more
               </a>
-              <a className="btn mt-32 bg-white px-20 py-6 text-3xl font-bold tracking-widest text-[#333]">
+              <Link
+                to="/projects"
+                className="btn mt-32 bg-white px-20 py-6 text-3xl font-bold tracking-widest text-[#333]"
+              >
                 View all projects...
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Layout from "./Components/Layout";
-import Projects from "./Pages/Projects";
+import Projects from "./Components/Projects";
 
 // to-do: optimize all the images
 

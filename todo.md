@@ -1,7 +1,5 @@
 Fase 3 – Añadir React Router
 
-Configurar rutas: por ejemplo, / (Inicio) y /projects (Proyectos)
-
 Enlazar los botones o elementos del menú a las rutas nuevas
 
 Fase 4 – Página de Proyectos
