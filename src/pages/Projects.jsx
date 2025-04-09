@@ -1,8 +1,3 @@
-// to-do: add a button to go into another page with all the projects
-// to-do: make a state and push to it 3 random numbers (max the lenghy of the json projects)
-// to-do: the function of random numbers have to run only the first time (use an useEffect)
-// to-do: create a Project component that can be rehused in this component and into the page with all the projects
-
 import Project from "../Components/Project";
 import { projects } from "../datas/projects";
 
