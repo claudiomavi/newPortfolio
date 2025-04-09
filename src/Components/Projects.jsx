@@ -11,7 +11,7 @@ export default function Projects() {
           <span className="relative mb-14 block text-center text-6xl uppercase tracking-widest">
             Projects
           </span>
-          <span className="not-sm:text-3xl m-auto block max-w-7xl text-center text-3xl font-medium text-[#777]">
+          <span className="not-sm:text-3xl leading-12 m-auto block max-w-7xl text-center text-3xl font-medium text-[#777]">
             All my projects include links to the code and live version. Click
             the button to learn more about each one.
           </span>

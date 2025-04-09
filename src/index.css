@@ -1,34 +1,19 @@
 @import "tailwindcss";
 
-/* to-do: añadir font-family */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
 
-/* to-do: delete this */
 * {
   --n-blue: 0, 98, 185;
-  --blue: rgba(0, 98, 185, 0.8);
-  --red: red;
-  --purple: rgba(143, 162, 255, 0.8);
-  --green: rgba(31, 79, 45, 0.8);
-  --light-green: rgba(101, 146, 74, 0.8);
-  --brown: rgba(129, 104, 8, 0.8);
-  --light-brown: rgba(186, 155, 65, 0.8);
   --main-color: var(--n-blue);
 }
 
 @theme {
   --color-n-blue: rgb(0, 98, 185);
-  --color-blue: rgba(0, 98, 185, 0.8);
-  --color-red: red;
-  --color-purple: rgba(143, 162, 255, 0.8);
-  --color-green: rgba(31, 79, 45, 0.8);
-  --color-light-green: rgba(101, 146, 74, 0.8);
-  --color-brown: rgba(129, 104, 8, 0.8);
-  --color-light-brown: rgba(186, 155, 65, 0.8);
 }
 
 @layer utilities {
   .btn {
-    @apply inline-block rounded-[5px] bg-white font-bold uppercase tracking-[2px] text-[#333] shadow-[0_5px_15px_0_rgba(0,0,0,0.15)] transition-transform duration-300;
+    @apply inline-block rounded-[5px] font-bold uppercase tracking-[2px] shadow-[0_5px_15px_0_rgba(0,0,0,0.15)] transition-transform duration-300;
   }
 
   .btn:hover {
@@ -50,6 +35,8 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
 }
 @media only screen and (max-width: 75em) {
   html {
@@ -64,249 +51,5 @@ html {
 @media only screen and (min-width: 112.5em) {
   html {
     font-size: 65%;
-  }
-}
-
-body {
-  box-sizing: border-box;
-  position: relative;
-  line-height: 1.5;
-  font-family: sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  font-family: "Source Sans Pro", sans-serif;
-}
-.heading-sec__main::after {
-  content: "";
-  position: absolute;
-  top: calc(100% + 1.5rem);
-  height: 5px;
-  width: 3rem;
-  background: rgba(var(--main-color), 1);
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5px;
-}
-@media only screen and (max-width: 37.5em) {
-  .heading-sec__main::after {
-    top: calc(100% + 1.2rem);
-  }
-}
-
-.heading-sm {
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.projects__row:last-child {
-  margin-bottom: 0;
-}
-
-.contact {
-  background:
-    linear-gradient(
-      to right,
-      rgba(var(--main-color), 0.8),
-      rgba(var(--main-color), 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
-  background-size: cover;
-  background-position: center;
-}
-
-.project-cs-hero {
-  color: #fff;
-  background:
-    linear-gradient(
-      to right,
-      rgba(var(--main-color), 0.8),
-      rgba(var(--main-color), 0.8)
-    ),
-    url(../../assets/svg/common-bg.svg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-@media only screen and (max-width: 37.5em) {
-  .project-cs-hero {
-    height: unset;
-    min-height: unset;
-  }
-}
-.project-cs-hero__content {
-  padding: 25rem 0 17rem 0;
-  max-width: 90rem;
-  width: 92%;
-  margin: auto;
-}
-@media only screen and (max-width: 37.5em) {
-  .project-cs-hero__content {
-    padding: 19rem 0 13rem 0;
-    margin: auto;
-    position: static;
-    transform: translate(0, 0);
-  }
-}
-.project-cs-hero__info {
-  margin: 3rem auto 0 auto;
-  max-width: 80rem;
-}
-.project-cs-hero__cta {
-  margin-top: 5rem;
-  text-align: center;
-}
-
-.project-details__content {
-  padding: 8rem 0;
-  max-width: 90rem;
-  margin: auto;
-}
-.project-details__content-title {
-  font-weight: 700;
-  font-size: 2.8rem;
-  margin-bottom: 3rem;
-}
-@media only screen and (max-width: 37.5em) {
-  .project-details__content-title {
-    font-size: 2.4rem;
-  }
-}
-
-.project-details__showcase-img-cont {
-  width: 100%;
-  margin-bottom: 6rem;
-}
-
-.project-details__showcase-img {
-  width: 100%;
-}
-
-.project-details__content-main {
-  width: 100%;
-  max-width: 70rem;
-  margin: auto;
-}
-
-.project-details__desc {
-  margin: 0 0 7rem 0;
-}
-.project-details__desc-para {
-  font-size: 1.8rem;
-  line-height: 1.7;
-  color: grey;
-  margin-bottom: 2rem;
-}
-
-.project-details__tools-used {
-  margin: 0 0 7rem 0;
-}
-.project-details__tools-used-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.project-details__tools-used-item {
-  padding: 1rem 2rem;
-  margin-bottom: 1.5rem;
-  margin-right: 1.5rem;
-  font-size: 1.6rem;
-  background: rgba(153, 153, 153, 0.2);
-  border-radius: 5px;
-  font-weight: 600;
-  color: #777;
-}
-
-.project-details__links {
-  margin: 0 0;
-}
-.project-details__links-btn {
-  margin-right: 2rem;
-}
-@media only screen and (max-width: 37.5em) {
-  .project-details__links-btn {
-    margin-right: 0;
-    width: 70%;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-}
-.project-details__links-btn:last-child {
-  margin: 0;
-}
-@media only screen and (max-width: 37.5em) {
-  .project-details__links-btn:last-child {
-    margin: 0;
-  }
-}
-
-.main-footer {
-  background: #000;
-  color: #fff;
-}
-.main-footer__upper {
-  display: flex;
-  justify-content: space-between;
-  padding: 8rem 0;
-}
-@media only screen and (max-width: 56.25em) {
-  .main-footer__upper {
-    padding: 6rem 0;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .main-footer__upper {
-    display: block;
-  }
-}
-.main-footer__row-1 {
-  order: 2;
-}
-@media only screen and (max-width: 56.25em) {
-  .main-footer__row-1 {
-    margin-bottom: 5rem;
-  }
-}
-.main-footer__row-2 {
-  width: 40%;
-  order: 1;
-  max-width: 50rem;
-}
-@media only screen and (max-width: 56.25em) {
-  .main-footer__row-2 {
-    width: 100%;
-  }
-}
-.main-footer__short-desc {
-  margin-top: 2rem;
-  color: #eee;
-  font-size: 1.5rem;
-  line-height: 1.7;
-}
-.main-footer__social-cont {
-  margin-top: 2rem;
-}
-.main-footer__icon {
-  margin-right: 1rem;
-  width: 2.5rem;
-}
-.main-footer__icon--mr-none {
-  margin-right: 0;
-}
-.main-footer__lower {
-  padding: 4rem 0;
-  border-top: 1px solid #444;
-  color: #eee;
-  font-size: 1.2rem;
-  text-align: left;
-  text-align: center;
-}
-.main-footer__lower a {
-  text-decoration: underline;
-  font-weight: bold;
-  margin-left: 2px;
-}
-@media only screen and (max-width: 56.25em) {
-  .main-footer__lower {
-    padding: 3.5rem 0;
   }
 }

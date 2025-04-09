@@ -1,6 +1,9 @@
 export default function Contact() {
   return (
-    <section id="contact" className="contact not-md:py-32 py-48">
+    <section
+      id="contact"
+      className="not-md:py-32 bg-[linear-gradient(to_right,rgba(var(--main-color),0.8),rgba(var(--main-color),0.8)),url('/svg/common-bg.svg')] bg-cover bg-center py-48"
+    >
       <div className="mx-auto w-[92%] max-w-[120rem]">
         <h2 className="not-md:mb-32 mb-36">
           <span className="relative mb-14 block text-center text-6xl uppercase tracking-widest text-white">

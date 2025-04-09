@@ -6,7 +6,7 @@ export default function Hero() {
           Hey, My name is Claudio Marino
         </h1>
         <div className="mx-auto mt-12 max-w-7xl">
-          <p className="not-sm:text-3xl w-full text-center text-4xl">
+          <p className="not-sm:text-3xl leading-12 w-full text-center text-4xl">
             I am a passionate frontend developer based in Valencia, ES. My
             specialities are <strong>React JS</strong> and{" "}
             <strong>Tailwind CSS</strong>, and I love building apps that are
@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="mt-20 text-center">
           <a
             href="./#projects"
-            className="btn px-[8rem] py-[1.5rem] text-[2rem]"
+            className="btn bg-white px-[8rem] py-[1.5rem] text-[2rem] text-[#333]"
           >
             See my projects
           </a>

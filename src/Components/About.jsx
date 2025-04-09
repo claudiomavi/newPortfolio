@@ -6,7 +6,7 @@ export default function About() {
           <span className="relative mb-14 block text-center text-6xl uppercase tracking-widest">
             About Me
           </span>
-          <span className="not-sm:text-3xl m-auto block max-w-7xl text-center text-3xl font-medium text-[#777]">
+          <span className="not-sm:text-3xl leading-12 m-auto block max-w-7xl text-center text-3xl font-medium text-[#777]">
             <p>
               I'm a Front-End Developer with expertise in React and JavaScript,
               focused on creating efficient and user-friendly web applications.
