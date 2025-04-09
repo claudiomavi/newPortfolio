@@ -3,6 +3,9 @@ import Home from "./pages/Home";
 import Layout from "./Components/Layout";
 import Projects from "./pages/Projects";
 
+// to-do: sustituir con react hash
+// to-do: solucionar error pagina projects
+
 export default function App() {
   return (
     <Routes>
