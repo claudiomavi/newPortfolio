@@ -1,10 +1,12 @@
 export default function About() {
   return (
-    <section id="about" class="about sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">About Me</span>
-          <span class="heading-sec__sub">
+    <section id="about" className="about not-md:py-32 py-48">
+      <div className="mx-auto w-[92%] max-w-[120rem]">
+        <h2 className="heading-sec__mb-med">
+          <span className="relative mb-14 block text-center text-6xl uppercase tracking-widest">
+            About Me
+          </span>
+          <span className="not-sm:text-3xl m-auto block max-w-7xl text-center text-3xl font-medium text-[#777]">
             <p>
               I'm a Front-End Developer with expertise in React and JavaScript,
               focused on creating efficient and user-friendly web applications.
@@ -15,11 +17,11 @@ export default function About() {
             </p>
           </span>
         </h2>
-        <div class="about__content">
-          <div class="about__content-main">
-            <h3 class="about__content-title">Get to know me!</h3>
-            <div class="about__content-details">
-              <p class="about__content-details-para">
+        <div className="about__content">
+          <div className="about__content-main">
+            <h3 className="about__content-title">Get to know me!</h3>
+            <div className="about__content-details">
+              <p className="about__content-details-para">
                 My background is in business administration and web development.
                 I’ve worked in administration for a Spanish company while
                 building personal projects using React and modern web
@@ -29,23 +31,23 @@ export default function About() {
             </div>
             <a
               href="./#contact"
-              class="btn bg-n-blue dynamicBgClr px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
+              className="btn bg-n-blue px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
             >
               Contact
             </a>
           </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">React</div>
-              <div class="skills__skill">Firebase</div>
-              <div class="skills__skill">Git</div>
-              <div class="skills__skill">Figma</div>
-              <div class="skills__skill">Tailwind CSS</div>
-              <div class="skills__skill">API Rest</div>
+          <div className="about__content-skills">
+            <h3 className="about__content-title">My Skills</h3>
+            <div className="skills">
+              <div className="skills__skill">HTML</div>
+              <div className="skills__skill">CSS</div>
+              <div className="skills__skill">JavaScript</div>
+              <div className="skills__skill">React</div>
+              <div className="skills__skill">Firebase</div>
+              <div className="skills__skill">Git</div>
+              <div className="skills__skill">Figma</div>
+              <div className="skills__skill">Tailwind CSS</div>
+              <div className="skills__skill">API Rest</div>
             </div>
           </div>
         </div>

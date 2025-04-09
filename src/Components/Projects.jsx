@@ -5,84 +5,40 @@
 
 export default function Projects() {
   return (
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
+    <section id="projects" className="not-md:py-32 py-48">
+      <div className="mx-auto w-[92%] max-w-[120rem]">
+        <h2 className="not-md:mb-32 mb-44">
+          <span className="relative mb-14 block text-center text-6xl uppercase tracking-widest">
+            Projects
+          </span>
+          <span className="not-sm:text-3xl m-auto block max-w-7xl text-center text-3xl font-medium text-[#777]">
             All my projects include links to the code and live version. Click
             the button to learn more about each one.
           </span>
         </h2>
 
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
+        <div>
+          <div className="not-md:grid-cols-1 not-md:gap-8 not-md:text-center not-md:mb-32 mb-44 grid grid-cols-[1.5fr_1fr] gap-20">
+            <div className="overflow-hidden">
               <img
                 src="./assets/img/quiz.jpg"
                 alt="Software Screenshot"
-                class="projects__row-img"
+                className="block w-full object-cover"
                 loading="lazy"
               />
             </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Quiz App</h3>
-              <p class="projects__row-content-desc">
+            <div className="not-md:items-center flex flex-col items-start justify-center py-8">
+              <h3 className="not-sm:font-4xl mb-8 text-5xl font-bold">
+                Quiz App
+              </h3>
+              <p className="not-sm:text-2xl leading-12 mb-12 max-w-5xl text-3xl text-gray-400">
                 Quizzical is a simple quiz app that lets you select alternatives
                 and then gives you a score. It's built with functional React
                 components.
               </p>
               <a
                 href="./project-1.html"
-                class="btn bg-n-blue dynamicBgClr px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/img/dashboard.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Personal Dashboard</h3>
-              <p class="projects__row-content-desc">
-                A Chrome Extension that gives you an overview over the current
-                time, how the weather is like and how Dogecoin is performing.
-                Interacts with multiple APIs using async JS.
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn bg-n-blue dynamicBgClr px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
-              >
-                Learn more
-              </a>
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/img/password.jpg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Password Generator</h3>
-              <p class="projects__row-content-desc">
-                An app that generates random passwords based on a few user
-                inputs, e.g. length, types of characters, etc. Built with HTML,
-                CSS, and vanilla JavaScript.
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn bg-n-blue dynamicBgClr px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
+                className="btn bg-n-blue px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
               >
                 Learn more
               </a>
