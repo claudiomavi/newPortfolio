@@ -1,6 +1,9 @@
 export default function Hero() {
   return (
-    <section className="not-sm:h-auto not-sm:min-h-0 relative h-screen max-h-[120rem] min-h-[80rem] bg-[linear-gradient(to_right,rgba(var(--main-color),0.8),rgba(var(--main-color),0.8)),url('/svg/common-bg.svg')] bg-cover bg-center bg-no-repeat text-white">
+    <section
+      id="home"
+      className="not-sm:h-auto not-sm:min-h-0 relative h-screen max-h-[120rem] min-h-[80rem] bg-[linear-gradient(to_right,rgba(var(--main-color),0.8),rgba(var(--main-color),0.8)),url('/svg/common-bg.svg')] bg-cover bg-center bg-no-repeat text-white"
+    >
       <div className="not-sm:pt-72 not-sm:pb-52 not-sm:m-auto not-sm:static not-sm:-translate-0 absolute left-1/2 top-1/2 w-[92%] max-w-[90rem] -translate-x-1/2 -translate-y-1/2 transform">
         <h1 className="not-sm:text-7xl text-center text-8xl uppercase tracking-[3px]">
           Hey, My name is Claudio Marino

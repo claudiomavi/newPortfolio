@@ -3,9 +3,24 @@
 // to-do: the function of random numbers have to run only the first time (use an useEffect)
 // to-do: create a Project component that can be rehused in this component and into the page with all the projects
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Projects() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100); // espera a que cargue todo
+      }
+    }
+  }, [location]);
+
   return (
     <section id="projects" className="not-md:py-32 py-48">
       <div className="mx-auto w-[92%] max-w-[120rem]">

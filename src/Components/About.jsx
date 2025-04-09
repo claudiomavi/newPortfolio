@@ -1,4 +1,21 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 export default function About() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100); // espera a que cargue todo
+      }
+    }
+  }, [location]);
+
   return (
     <section id="about" className="not-md:py-32 bg-[#fafafa] py-48">
       <div className="mx-auto w-[92%] max-w-[120rem]">

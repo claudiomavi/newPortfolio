@@ -1,10 +1,25 @@
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
   function toggleOpen() {
     setIsOpen((prev) => !prev);
+  }
+
+  function handleScroll(id) {
+    if (location.pathname !== "/") {
+      return navigate(`/#${id}`);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        return element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   }
 
   return (
@@ -25,38 +40,38 @@ export default function Header() {
         <div>
           <ul className="not-sm:hidden flex">
             <li>
-              <a
-                href="#"
+              <button
+                onClick={() => handleScroll("home")}
                 className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
               >
                 {" "}
                 Home{" "}
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="./index.html#projects"
+              <button
+                onClick={() => handleScroll("projects")}
                 className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
               >
                 Projects
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="./index.html#about"
+              <button
+                onClick={() => handleScroll("about")}
                 className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
               >
                 About{" "}
-              </a>
+              </button>
             </li>
             <li>
-              <a
-                href="./index.html#contact"
+              <button
+                onClick={() => handleScroll("contact")}
                 className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
               >
                 {" "}
                 Contact{" "}
-              </a>
+              </button>
             </li>
           </ul>
           <div className="not-sm:block hidden w-12 py-9">
@@ -81,43 +96,43 @@ export default function Header() {
         <div>
           <ul>
             <li>
-              <a
+              <button
                 className="hover:text-n-blue block border-b border-t border-[#eee] px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
-                href="./index.html"
+                onClick={() => handleScroll("home")}
               >
                 {" "}
                 Home{" "}
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
+              <button
                 className="hover:text-n-blue block border-b border-[#eee] px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
-                href="./index.html#projects"
+                onClick={() => handleScroll("projects")}
               >
                 {" "}
                 Projects{" "}
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
+              <button
                 className="hover:text-n-blue block border-b border-[#eee] px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
-                href="./index.html#about"
+                onClick={() => handleScroll("about")}
               >
                 {" "}
                 About{" "}
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
+              <button
                 className="hover:text-n-blue block px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
-                href="./index.html#contact"
+                onClick={() => handleScroll("contact")}
               >
                 {" "}
                 Contact{" "}
-              </a>
+              </button>
             </li>
           </ul>
         </div>
