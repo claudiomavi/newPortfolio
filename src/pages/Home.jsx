@@ -1,15 +1,13 @@
 import About from "../Components/About";
 import Contact from "../Components/Contact";
-import Header from "../Components/Header";
 import Hero from "../Components/Hero";
-import Projects from "../Components/Projects";
-import Footer from "../Components/Footer";
+import ProjectsSection from "../Components/ProjectsSection";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Projects />
+      <ProjectsSection />
       <About />
       <Contact />
     </>
