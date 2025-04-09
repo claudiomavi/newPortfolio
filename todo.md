@@ -1,9 +1,4 @@
-Fase 2 – Migración de plantilla a React
-
-Usar clases de Tailwind en lugar de estilos antiguos (si tu plantilla no los usa)
-
 Fase 3 – Añadir React Router
-Instalar React Router (react-router-dom)
 
 Configurar rutas: por ejemplo, / (Inicio) y /projects (Proyectos)
 

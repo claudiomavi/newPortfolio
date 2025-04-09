@@ -18,7 +18,7 @@ export default function Projects() {
         </h2>
 
         <div>
-          <div className="not-md:grid-cols-1 not-md:gap-8 not-md:text-center not-md:mb-32 mb-44 grid grid-cols-[1.5fr_1fr] gap-20">
+          <div className="not-md:grid-cols-1 not-md:gap-8 not-md:text-center grid grid-cols-[1.5fr_1fr] gap-20">
             <div className="overflow-hidden">
               <img
                 src="./assets/img/quiz.jpg"
@@ -38,9 +38,12 @@ export default function Projects() {
               </p>
               <a
                 href="./project-1.html"
-                className="btn bg-n-blue px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
+                className="btn bg-n-blue px-[5rem] py-6 text-[1.6rem] text-white"
               >
                 Learn more
+              </a>
+              <a className="btn mt-32 bg-white px-20 py-6 text-3xl font-bold tracking-widest text-[#333]">
+                View all projects...
               </a>
             </div>
           </div>
