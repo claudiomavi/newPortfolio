@@ -22,66 +22,52 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className="home-hero__socials">
-        <div className="home-hero__social">
+      <div className="not-md:hidden absolute top-1/2 -translate-y-1/2 transform border-2 border-[#eee]">
+        <div className="w-20">
           <a
             href="https://www.linkedin.com/in/claudio-marino-b3420b296/"
             target="_blank"
             rel="noopener noreferrer"
-            className="home-hero__social-icon-link"
+            className="block w-full border border-[#eee] p-5 transition-all duration-300 hover:bg-white/10"
           >
-            <img
-              src="/img/linkedin-ico.png"
-              alt="icon"
-              className="home-hero__social-icon"
-            />
+            <img src="/img/linkedin-ico.png" alt="icon" className="w-full" />
           </a>
         </div>
-        <div className="home-hero__social">
+        <div className="w-20">
           <a
             href="https://github.com/claudiomavi"
             target="_blank"
             rel="noopener noreferrer"
-            className="home-hero__social-icon-link"
+            className="block w-full border border-[#eee] p-5 transition-all duration-300 hover:bg-white/10"
           >
-            <img
-              src="/img/github-ico.png"
-              alt="icon"
-              className="home-hero__social-icon"
-            />
+            <img src="/img/github-ico.png" alt="icon" className="w-full" />
           </a>
         </div>
-        <div className="home-hero__social">
+        <div className="w-20">
           <a
             href="mailto:claudio.marino@outlook.es"
             target="_blank"
             rel="noopener noreferrer"
-            className="home-hero__social-icon-link"
+            className="block w-full border border-[#eee] p-5 transition-all duration-300 hover:bg-white/10"
           >
-            <img
-              src="/svg/mail.svg"
-              alt="icon"
-              className="home-hero__social-icon"
-            />
+            <img src="/svg/mail.svg" alt="icon" className="w-full" />
           </a>
         </div>
-        <div className="home-hero__social">
+        <div className="w-20">
           <a
             href="https://www.instagram.com/marinodeveloper"
             target="_blank"
             rel="noopener noreferrer"
-            className="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+            className="block w-full border border-b-0 border-[#eee] p-5 transition-all duration-300 hover:bg-white/10"
           >
-            <img
-              src="/img/insta-ico.png"
-              alt="icon"
-              className="home-hero__social-icon"
-            />
+            <img src="/img/insta-ico.png" alt="icon" className="w-full" />
           </a>
         </div>
       </div>
-      <div className="home-hero__mouse-scroll-cont">
-        <div className="mouse"></div>
+      <div className="not-sm:hidden absolute bottom-[3%] left-1/2 -translate-x-1/2 transform">
+        <div className="mouse relative h-[40px] w-[25px] overflow-hidden rounded-[60px] border-2 border-[#eee]">
+          <div className="animate-wheel absolute left-1/2 top-[7px] h-[5px] w-[5px] translate-x-[-50%] rounded-full bg-[#eee]"></div>
+        </div>
       </div>
     </section>
   );

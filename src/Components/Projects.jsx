@@ -34,7 +34,7 @@ export default function Projects() {
               </p>
               <a
                 href="./project-1.html"
-                class="btn btn--med btn--theme dynamicBgClr"
+                class="btn bg-n-blue dynamicBgClr px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
               >
                 Learn more
               </a>
@@ -58,7 +58,7 @@ export default function Projects() {
               </p>
               <a
                 href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
+                class="btn bg-n-blue dynamicBgClr px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
               >
                 Learn more
               </a>
@@ -82,7 +82,7 @@ export default function Projects() {
               </p>
               <a
                 href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
+                class="btn bg-n-blue dynamicBgClr px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
               >
                 Learn more
               </a>

@@ -27,7 +27,10 @@ export default function About() {
                 Game of Thrones.
               </p>
             </div>
-            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">
+            <a
+              href="./#contact"
+              class="btn bg-n-blue dynamicBgClr px-[5rem] py-[1.5rem] text-[1.6rem] text-white"
+            >
               Contact
             </a>
           </div>
