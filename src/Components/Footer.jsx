@@ -17,7 +17,7 @@ export default function Footer() {
               >
                 <img
                   className="mr-4 w-10"
-                  src="/img/linkedin-ico.png"
+                  src="/img/linkedin-ico.webp"
                   alt="icon"
                 />
               </a>
@@ -28,7 +28,7 @@ export default function Footer() {
               >
                 <img
                   className="mr-4 w-10"
-                  src="/img/github-ico.png"
+                  src="/img/github-ico.webp"
                   alt="icon"
                 />
               </a>
@@ -46,7 +46,7 @@ export default function Footer() {
               >
                 <img
                   className="mr-4 w-10"
-                  src="/img/insta-ico.png"
+                  src="/img/insta-ico.webp"
                   alt="icon"
                 />
               </a>

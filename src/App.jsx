@@ -3,8 +3,6 @@ import Home from "./Pages/Home";
 import Layout from "./Components/Layout";
 import Projects from "./pages/Projects";
 
-// to-do: optimize all the images
-
 export default function App() {
   return (
     <Routes>

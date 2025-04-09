@@ -33,7 +33,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="block w-full border border-[#eee] p-5 transition-all duration-300 hover:bg-white/10"
           >
-            <img src="/img/linkedin-ico.png" alt="icon" className="w-full" />
+            <img src="/img/linkedin-ico.webp" alt="icon" className="w-full" />
           </a>
         </div>
         <div className="w-20">
@@ -43,7 +43,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="block w-full border border-[#eee] p-5 transition-all duration-300 hover:bg-white/10"
           >
-            <img src="/img/github-ico.png" alt="icon" className="w-full" />
+            <img src="/img/github-ico.webp" alt="icon" className="w-full" />
           </a>
         </div>
         <div className="w-20">
@@ -63,7 +63,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="block w-full border border-b-0 border-[#eee] p-5 transition-all duration-300 hover:bg-white/10"
           >
-            <img src="/img/insta-ico.png" alt="icon" className="w-full" />
+            <img src="/img/insta-ico.webp" alt="icon" className="w-full" />
           </a>
         </div>
       </div>
