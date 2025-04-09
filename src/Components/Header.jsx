@@ -15,7 +15,7 @@ export default function Header() {
             <img
               src="img/avatar.webp"
               alt="Claudio Marino Logo Image"
-              className="block h-full w-full object-cover object-center"
+              className="object-cover object-center"
             />
           </div>
           <span className="text-3xl font-bold uppercase tracking-widest">
