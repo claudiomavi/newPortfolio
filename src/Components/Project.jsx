@@ -30,11 +30,10 @@ export default function Project({
           {date && `Last update: ${date}`}
         </p>
         <a
-          href={siteUrl}
-          disabled={siteUrl ? false : true}
+          href={siteUrl ? siteUrl : ""}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn bg-n-blue mb-16 px-[5rem] py-6 text-[1.6rem] text-white disabled:bg-gray-500/10"
+          className={`btn mb-16 px-[5rem] py-6 text-[1.6rem] text-white ${siteUrl ? "bg-n-blue" : "cursor-not-allowed bg-gray-500/10"}`}
         >
           Learn more
         </a>
