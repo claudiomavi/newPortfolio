@@ -11,22 +11,24 @@ export default function Header() {
   return (
     <header className="fixed z-10 w-full bg-white shadow-md">
       <div className="not-md:px-8 flex items-center justify-between px-20 py-4">
-        <div className="hover:text-n-blue flex cursor-pointer items-center text-[#333] transition-all duration-300">
-          <div className="bg-n-blue not-md:mr-5 not-md:h-16 not-md:w-16 mr-6 h-20 w-20 overflow-hidden rounded-full">
-            <img
-              src="img/avatar.webp"
-              alt="Claudio Marino Logo Image"
-              className="object-cover object-center"
-            />
+        <HashLink smooth to="#">
+          <div className="hover:text-n-blue flex cursor-pointer items-center text-[#333] transition-all duration-300">
+            <div className="bg-n-blue not-md:mr-5 not-md:h-16 not-md:w-16 mr-6 h-20 w-20 overflow-hidden rounded-full">
+              <img
+                src="img/avatar.webp"
+                alt="Claudio Marino Logo Image"
+                className="object-cover object-center"
+              />
+            </div>
+            <h1
+              smooth
+              to="#"
+              className="text-3xl font-bold uppercase tracking-widest"
+            >
+              Claudio Marino
+            </h1>
           </div>
-          <HashLink
-            smooth
-            to="#"
-            className="text-3xl font-bold uppercase tracking-widest"
-          >
-            Claudio Marino
-          </HashLink>
-        </div>
+        </HashLink>
         <div>
           <ul className="not-sm:hidden flex">
             <li>
