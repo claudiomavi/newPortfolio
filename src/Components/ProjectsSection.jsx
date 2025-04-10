@@ -35,8 +35,8 @@ export default function ProjectsSection() {
         </h2>
 
         <div className="flex flex-col items-center justify-center">
-          {randomNumbers.map((number, index) => (
-            <div key={index}>
+          {randomNumbers.map((number) => (
+            <div key={projects[number].id}>
               <Project
                 imageUrl={projects[number].imageUrl}
                 title={projects[number].title}
