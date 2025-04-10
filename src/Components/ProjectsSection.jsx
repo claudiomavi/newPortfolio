@@ -36,15 +36,15 @@ export default function ProjectsSection() {
 
         <div className="flex flex-col items-center justify-center">
           {randomNumbers.map((number) => (
-            <div key={projects[number].id}>
-              <Project
-                imageUrl={projects[number].imageUrl}
-                title={projects[number].title}
-                description={projects[number].description}
-                siteUrl={projects[number].siteUrl}
-              />
-            </div>
+            <Project
+              imageUrl={projects[number].imageUrl}
+              title={projects[number].title}
+              description={projects[number].description}
+              siteUrl={projects[number].siteUrl}
+            />
           ))}
+        </div>
+        <div className="text-center">
           <Link
             to="/projects"
             className="btn mt-32 bg-white px-20 py-6 text-3xl font-bold tracking-widest text-[#333]"

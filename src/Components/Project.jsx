@@ -7,7 +7,7 @@ export default function Project({
   date,
 }) {
   return (
-    <div className="not-md:grid-cols-1 not-md:gap-8 not-md:text-center grid grid-cols-[1.5fr_1fr] gap-20">
+    <div className="not-md:grid-cols-1 not-md:gap-8 not-md:text-center mb-8 grid grid-cols-[1.5fr_1fr] gap-20 border-b-4 border-gray-200 last:border-b-0">
       <div className="overflow-hidden">
         <img
           src={imageUrl}
