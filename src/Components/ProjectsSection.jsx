@@ -37,6 +37,7 @@ export default function ProjectsSection() {
         <div className="flex flex-col items-center justify-center">
           {randomNumbers.map((number) => (
             <Project
+              key={projects[number].key}
               imageUrl={projects[number].imageUrl}
               title={projects[number].title}
               description={projects[number].description}
