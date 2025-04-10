@@ -35,14 +35,15 @@ export default function ProjectsSection() {
         </h2>
 
         <div className="flex flex-col items-center justify-center">
-          {randomNumbers.map((number) => (
-            <Project
-              key={projects[number].id}
-              imageUrl={projects[number].imageUrl}
-              title={projects[number].title}
-              description={projects[number].description}
-              siteUrl={projects[number].siteUrl}
-            />
+          {randomNumbers.map((number, index) => (
+            <div key={index}>
+              <Project
+                imageUrl={projects[number].imageUrl}
+                title={projects[number].title}
+                description={projects[number].description}
+                siteUrl={projects[number].siteUrl}
+              />
+            </div>
           ))}
           <Link
             to="/projects"
