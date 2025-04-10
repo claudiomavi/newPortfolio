@@ -1,11 +1,10 @@
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Project from "./Project";
 import { projects } from "../datas/projects";
 
 export default function ProjectsSection() {
   const [randomNumbers, setRandomNumbers] = useState([]);
-  const location = useLocation();
 
   useEffect(() => {
     function getRandomNumbers() {
@@ -21,18 +20,6 @@ export default function ProjectsSection() {
 
     return getRandomNumbers();
   }, []);
-
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace("#", "");
-      const element = document.getElementById(id);
-      if (element) {
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth" });
-        }, 100); // espera a que cargue todo
-      }
-    }
-  }, [location]);
 
   return (
     <section id="projects" className="not-md:py-32 py-48">

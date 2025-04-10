@@ -1,25 +1,11 @@
 import { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navigate = useNavigate();
-  const location = useLocation();
-
   function toggleOpen() {
     setIsOpen((prev) => !prev);
-  }
-
-  function handleScroll(id) {
-    if (location.pathname !== "/") {
-      return navigate(`/#${id}`);
-    } else {
-      const element = document.getElementById(id);
-      if (element) {
-        return element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
   }
 
   return (
@@ -33,45 +19,53 @@ export default function Header() {
               className="object-cover object-center"
             />
           </div>
-          <span className="text-3xl font-bold uppercase tracking-widest">
+          <HashLink
+            smooth
+            to="#"
+            className="text-3xl font-bold uppercase tracking-widest"
+          >
             Claudio Marino
-          </span>
+          </HashLink>
         </div>
         <div>
           <ul className="not-sm:hidden flex">
             <li>
-              <button
-                onClick={() => handleScroll("home")}
+              <HashLink
+                smooth
+                to="/#home"
                 className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
               >
                 {" "}
                 Home{" "}
-              </button>
+              </HashLink>
             </li>
             <li>
-              <button
-                onClick={() => handleScroll("projects")}
+              <HashLink
+                smooth
+                to="/#projects"
                 className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
               >
                 Projects
-              </button>
+              </HashLink>
             </li>
             <li>
-              <button
-                onClick={() => handleScroll("about")}
+              <HashLink
+                smooth
+                to="/#about"
                 className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
               >
                 About{" "}
-              </button>
+              </HashLink>
             </li>
             <li>
-              <button
-                onClick={() => handleScroll("contact")}
+              <HashLink
+                smooth
+                to="/#contact"
                 className="hover:text-n-blue not-md:py-12 not-md:px-7 not-md:text-2xl inline-block px-12 py-9 text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
               >
                 {" "}
                 Contact{" "}
-              </button>
+              </HashLink>
             </li>
           </ul>
           <div className="not-sm:block hidden w-12 py-9">
@@ -96,43 +90,47 @@ export default function Header() {
         <div>
           <ul>
             <li>
-              <button
+              <HashLink
+                smooth
+                to="/#home"
                 className="hover:text-n-blue block border-b border-t border-[#eee] px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
-                onClick={() => handleScroll("home")}
               >
                 {" "}
                 Home{" "}
-              </button>
+              </HashLink>
             </li>
 
             <li>
-              <button
+              <HashLink
+                smooth
+                to="/#projects"
                 className="hover:text-n-blue block border-b border-[#eee] px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
-                onClick={() => handleScroll("projects")}
               >
                 {" "}
                 Projects{" "}
-              </button>
+              </HashLink>
             </li>
 
             <li>
-              <button
+              <HashLink
+                smooth
+                to="/#about"
                 className="hover:text-n-blue block border-b border-[#eee] px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
-                onClick={() => handleScroll("about")}
               >
                 {" "}
                 About{" "}
-              </button>
+              </HashLink>
             </li>
 
             <li>
-              <button
+              <HashLink
+                smooth
+                to="/#contact"
                 className="hover:text-n-blue block px-12 py-10 text-right text-2xl font-bold uppercase tracking-widest text-[#333] transition-all duration-300"
-                onClick={() => handleScroll("contact")}
               >
                 {" "}
                 Contact{" "}
-              </button>
+              </HashLink>
             </li>
           </ul>
         </div>
