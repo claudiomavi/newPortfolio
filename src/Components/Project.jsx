@@ -33,7 +33,7 @@ export default function Project({
           rel="noopener noreferrer"
           className={`btn mb-16 px-[5rem] py-6 text-[1.6rem] text-white ${siteUrl ? "bg-n-blue" : "cursor-not-allowed bg-gray-500/10"}`}
         >
-          Learn more
+          {siteUrl ? "Learn more" : "Private project"}
         </a>
       </div>
     </div>
