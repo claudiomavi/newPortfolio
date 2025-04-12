@@ -31,7 +31,7 @@ export default function Project({
           href={siteUrl ? siteUrl : ""}
           target="_blank"
           rel="noopener noreferrer"
-          className={`btn mb-16 px-[5rem] py-6 text-[1.6rem] text-white ${siteUrl ? "bg-n-blue" : "cursor-not-allowed bg-gray-500/10"}`}
+          className={`btn mb-16 px-[5rem] py-6 text-[1.6rem] text-white ${siteUrl ? "bg-n-blue" : "pointer-events-none cursor-not-allowed bg-gray-500/30"}`}
         >
           {siteUrl ? "Learn more" : "Private project"}
         </a>
