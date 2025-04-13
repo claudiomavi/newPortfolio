@@ -36,6 +36,13 @@ export default function Footer() {
               >
                 <img className="w-10" src="/img/insta-ico.webp" alt="icon" />
               </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://flowcv.com/resume/hr4qjb7q89bs"
+              >
+                <img className="w-10" src="/svg/curriculum.svg" alt="icon" />
+              </a>
             </div>
           </div>
           <div className="not-md:w-full order-1 w-[40%] max-w-[50rem]">

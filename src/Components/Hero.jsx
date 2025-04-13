@@ -66,6 +66,16 @@ export default function Hero() {
             <img src="/img/insta-ico.webp" alt="icon" className="w-full" />
           </a>
         </div>
+        <div className="w-20">
+          <a
+            href="https://flowcv.com/resume/hr4qjb7q89bs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full border border-b-0 border-[#eee] p-5 transition-all duration-300 hover:bg-white/10"
+          >
+            <img src="/svg/curriculum.svg" alt="icon" className="w-full" />
+          </a>
+        </div>
       </div>
       <div className="not-sm:hidden absolute bottom-[3%] left-1/2 -translate-x-1/2 transform">
         <div className="mouse relative h-[40px] w-[25px] overflow-hidden rounded-[60px] border-2 border-[#eee]">
