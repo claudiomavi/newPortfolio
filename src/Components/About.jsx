@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { skills } from "../datas/skills";
 
 export default function About() {
   const location = useLocation();
@@ -60,33 +61,13 @@ export default function About() {
               My Skills
             </h3>
             <div className="flex flex-wrap">
-              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
-                HTML
-              </div>
-              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
-                CSS
-              </div>
-              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
-                JavaScript
-              </div>
-              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
-                React
-              </div>
-              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
-                Firebase
-              </div>
-              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
-                Git
-              </div>
-              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
-                Figma
-              </div>
-              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
-                Tailwind CSS
-              </div>
-              <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
-                API Rest
-              </div>
+              {skills.map((skill) => {
+                return (
+                  <div className="mb-6 mr-6 rounded-md bg-[rgba(153,153,153,0.2)] px-8 py-4 text-3xl font-semibold text-[#777]">
+                    {skill}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
