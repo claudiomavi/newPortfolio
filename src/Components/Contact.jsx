@@ -28,8 +28,19 @@ export default function Contact() {
           </span>
           <span className="not-sm:text-3xl leading-12 m-auto block max-w-7xl text-center text-3xl font-medium text-[#eee]">
             Please reach out if you have any questions! I'm happy to jump on a
-            video call to brainstorm projects and ideas. Send me an email at
-            claudio.marino@outlook.es or call me directly at +34 662 502 171
+            video call to brainstorm projects and ideas. Send me an email at{" "}
+            <a
+              href="mailto:claudio.marino@outlook.es"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline transition-all duration-300 hover:text-white"
+            >
+              claudio.marino@outlook.es
+            </a>{" "}
+            or call me directly at{" "}
+            <span className="underline transition-all duration-300 hover:text-white">
+              +34 662 502 171
+            </span>
           </span>
         </h2>
       </div>
