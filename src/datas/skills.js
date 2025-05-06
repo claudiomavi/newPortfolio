@@ -1,6 +1,7 @@
 export const skills = [
   "React.js",
   "JavaScript(ES6+)",
+  "Typescript",
   "HTML5",
   "CSS3",
   "Tailwind CSS",
