@@ -7,6 +7,7 @@ export const skills = [
   "Tailwind CSS",
   "JSON",
   "API Rest",
+  "SQL",
   "Firebase",
   "Agile",
   "Scrum",
