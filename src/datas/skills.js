@@ -9,6 +9,7 @@ export const skills = [
   "API Rest",
   "SQL",
   "Firebase",
+  "Supabase",
   "Agile",
   "Scrum",
   "SOLID",
