@@ -68,7 +68,7 @@ export default function Hero() {
         </div>
         <div className="w-20">
           <a
-            href="https://flowcv.com/resume/hr4qjb7q89bs"
+            href="https://flowcv.com/resume/wwwk4jd0hqvg"
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full border border-b-0 border-[#eee] p-5 transition-all duration-300 hover:bg-white/10"

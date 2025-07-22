@@ -39,7 +39,7 @@ export default function Footer() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://flowcv.com/resume/hr4qjb7q89bs"
+                href="https://flowcv.com/resume/wwwk4jd0hqvg"
               >
                 <img className="w-10" src="/svg/curriculum.svg" alt="icon" />
               </a>
